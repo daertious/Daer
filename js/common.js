@@ -118,7 +118,7 @@ function Play()
         }
 //END SOUND PLAYER
 
-
+//EASTER EGG
 document.addEventListener('DOMContentLoaded', function() {
     var showMusic = document.getElementById('showMusic');
     var music = document.getElementsByClassName("music")[0];
@@ -132,3 +132,4 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   });
+//END EASTER EGG
