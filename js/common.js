@@ -117,3 +117,18 @@ function Play()
             }
         }
 //END SOUND PLAYER
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var showMusic = document.getElementById('showMusic');
+    var music = document.getElementsByClassName("music")[0];
+    console.log(music.className);
+  
+    showMusic.addEventListener('click', function(e) {
+      e.preventDefault();
+      music.classList.remove('visibility');
+      console.log(music.className)
+    });
+  
+  
+  });
