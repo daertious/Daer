@@ -126,7 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     showMusic.addEventListener('click', function(e) {
       e.preventDefault();
-      music.classList.remove('visibility');
+      music.classList.remove('hidden');
+      music.classList.add('visibility');
       console.log(music.className)
     });  
 });
