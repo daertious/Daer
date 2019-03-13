@@ -128,8 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       music.classList.remove('visibility');
       console.log(music.className)
-    });
-  
-  
-  });
+    });  
+});
 //END EASTER EGG
