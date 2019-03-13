@@ -1,25 +1,15 @@
-<?php
-if(isset( $_POST['email']))
-$email = $_POST['email'];
-if(isset( $_POST['message']))
-$message = $_POST['message'];
+<?php 
+if(isset($_POST['submit'])){
+    $to = "diwnore@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $message = " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message "  . "\n\n" . $_POST['message'];
 
-    if ($email === ''){
-    echo "Email cannot be empty.";
-    die();
-    } else {
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    echo "Email format invalid.";
-    die();
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$message,$headers);
+    mail($from,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you ";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
-    }
-    if ($message === ''){
-    echo "Message cannot be empty.";
-    die();
-    }
-$content="From: \n Email: $email \n Message: $message";
-$recipient = "youremail@here.com";
-$mailheader = "From: $email \r\n";
-mail($recipient, $content, $mailheader) or die("Error!");
-echo "Email sent!";
 ?>
