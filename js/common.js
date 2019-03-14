@@ -1,18 +1,9 @@
-$(function() {
-
-	// Custom JS
-
-});
 // SCROLL MENU
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-        //забираем идентификатор бока с атрибута href
         var id  = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;       
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1000);
     });
 });
@@ -69,7 +60,6 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
@@ -77,45 +67,21 @@ window.onload = function() {
 };
 // END TEXT TYPE
 
-//CONTACT FORM
-function validateForm() {
-    var email =  document.getElementById('email').value;
-    if (email == "") {
-        document.getElementById('status').innerHTML = "Email cannot be empty";
-        return false;
-    } else {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(email)){
-            document.getElementById('status').innerHTML = "Email format invalid";
-            return false;
-        }
-    }
-    var message =  document.getElementById('message').value;
-    if (message == "") {
-        document.getElementById('status').innerHTML = "Message cannot be empty";
-        return false;
-    }
-    document.getElementById('status').innerHTML = "Sending...";
-    document.getElementById('contact-form').submit();
-  
-    }
-//END CONTACT FORM
-
 //SOUND PLAYER
 function Play()
+    {
+        var myMusic = document.getElementById("music");
+        if(myMusic.paused)
         {
-            var myMusic = document.getElementById("music");
-            if(myMusic.paused)
-            {
-                myMusic.play();
-                //document.getElementById("play").innerHTML="Pause";
-            }
-            else
-            {
-                myMusic.pause();
-               //document.getElementById("Pause").innerHTML="Play";
-            }
+            myMusic.play();
+            //document.getElementById("play").innerHTML="Pause";
         }
+        else
+        {
+            myMusic.pause();
+            //document.getElementById("Pause").innerHTML="Play";
+        }
+    }
 //END SOUND PLAYER
 
 //EASTER EGG
@@ -126,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     showMusic.addEventListener('click', function(e) {
       e.preventDefault();
-      music.classList.remove('hidden');
-      music.classList.add('visibility');
+      music.classList.remove("hidden");
+      music.classList.add("visibility");
       console.log(music.className)
     });  
 });
