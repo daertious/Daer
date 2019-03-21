@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $("#preloader").fadeOut(2000);
+});
 // SCROLL MENU
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
