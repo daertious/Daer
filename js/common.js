@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#preloader").fadeOut(2000);
+    $("#preloader").fadeOut(1000);
 });
 // SCROLL MENU
 $(document).ready(function(){
