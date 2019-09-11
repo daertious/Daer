@@ -79,8 +79,6 @@ function Play()
             myMusic.play();
             //document.getElementById("play").innerHTML="Pause";
             window.open('egg.html');
-		music.classList.add("hidden");
-      		music.classList.remove("visibility");
         }
         else
         {
@@ -101,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
       music.classList.remove("hidden");
       music.classList.add("visibility");
       console.log(music.className)
-	    music.classList.remove("music");
     });  
 });
 //END EASTER EGG
