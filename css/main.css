@@ -255,7 +255,7 @@
         cursor: pointer;
     }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1366px) and (max-width: 1900px) {
     .sans{
         width: 78px;
         height: 118px;
