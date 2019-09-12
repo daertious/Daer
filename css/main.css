@@ -19,6 +19,16 @@
         background-position: 20px 100%, 0 0;
     }
 }
+.lang-menu{
+    color: white;
+    position: fixed;
+    left: 25%;
+    top: 74%;
+}
+.lang{
+    padding: 10px;
+    border: 2px white solid;
+} 
 
 .sans{
     width: 78px;
@@ -176,7 +186,16 @@
             background-position: 20px 1%, 0 0;
         }
     }
-     
+    .lang-menu{
+        color: white;
+        position: fixed;
+        left: 31%;
+        top: 45%;
+    }
+    .lang{
+        padding: 10px;
+        border: 2px white solid;
+    } 
     .sans{
         width: 108px;
         height: 158px;
@@ -269,7 +288,16 @@
     }
     
     
-    
+    .lang-menu{
+        color: white;
+        position: fixed;
+        left: 15%;
+        top: 75%;
+    }
+    .lang{
+        padding: 10px;
+        border: 2px white solid;
+    } 
     .dialog-container{
         position: fixed;
         left:30%;
