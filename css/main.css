@@ -3,14 +3,28 @@
     padding: 0;
     background-image: url('../img/background.jpg');
     font-family: 'Press Start 2P', cursive;
+    animation-name: city;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
+@keyframes city {
+    0% {
+        background-position: -20px 100%, 0 0;
+    }
+    50% {
+        background-position: 0px 100%, 120% 60%, 120% 15%, 0 0;
+    }  
+    100% {
+        background-position: 20px 100%, 0 0;
+    }
+}
 
 .sans{
     width: 78px;
     height: 118px;
     position: fixed;
-    left: 50%;
+    left: 48%;
     top: 60%;
     animation-name: movingSans;
     animation-duration: 5000ms;
@@ -25,20 +39,13 @@
       opacity: 1;
     }
   }
-@keyframes movingFrisk{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-  }
+
 
 
 
 .dialog-container{
     position: fixed;
-    left:36%;
+    left:34%;
     top: 72%;
     width: 600px;
     height: 200px;
@@ -53,10 +60,22 @@
     position: absolute;
     left:5%;
     top: 10%;
+    animation-name: movingFace;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
 }
 .face_sans img{
     width: 160px;
     height: 160px;
+}
+@keyframes movingFace {
+    0% {
+    transform: translateY(10px)
+    }
+    100% {
+    transform: translateY(-10px)
+    }
 }
 .text{
     background: black;
@@ -69,13 +88,26 @@
     font-size: 18px;
     line-height: 180%;
 }
-
+.joke_text{
+    animation-name: animationJoke;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+@keyframes animationJoke {
+    0% {
+    transform: translateX(-1px)
+    }
+    100% {
+    transform: translateX(1px)
+    }
+}
 .choice1{
     background: black;
     width: 100px;
     height: 100px;
     position: absolute;
-    left:5%;
+    left:10%;
     top: 40%;
     color: white;
     cursor: pointer;
@@ -85,12 +117,41 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    right:5%;
+    right:10%;
     top: 40%;
     color: white;
     cursor: pointer;
 }
-
+.scary{
+    animation-name: animationScary;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+@keyframes animationScary {
+    0% {
+    transform: translateY(-2px)
+    }
+    100% {
+    transform: translateY(2px)
+    }
+}
+.face_scary{
+    animation-name: animationFaceScary;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+@keyframes animationFaceScary {
+    0% {
+    transform: scale(0.1, 0.1);
+    transform: rotate(0deg)
+    }
+    100% {
+    transform: scale(0.5, 0.5);
+    transform: rotate(180deg)
+    }
+}
 @media screen and (max-width: 980px) {
     .sans{
         width: 78px;
@@ -111,17 +172,8 @@
           opacity: 1;
         }
       }
-    @keyframes movingFrisk{
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-      }
-    
-    
-    
+
+       
     .dialog-container{
         position: fixed;
         left:0%;
