@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>TATTOO</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/logo.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/jquery.countdown.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+</head>
+
+<body>
+	<nav class="header__nav" >
+		<ul class="main-nav" id="menu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#tattoos">Promotion</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+	</nav>
+<header data-stellar-background-ratio="0.5" id="home">
+	<div class="header__content">	
+		<h1>TATTOO<br><i>make</i></h1>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis commodi nesciunt reprehenderit laboriosam sapiente maxime cum quasi? Illo, quisquam?</p>
+		
+		<a href="#ex1" rel="modal:open"><p class="button__header">Сontact</p></a>
+		<div class="modal" id="ex1">
+		<p>Thanks for clicking.</p>
+		<a href="#" rel="modal:close"></a></div>
+		<div class="social">
+			<a href=""><i class="fab fa-twitter-square"></i></a>
+			<a href=""><i class="fab fa-facebook-square"></i></a>
+			<a href=""><i class="fas fa-envelope"></i></a>
+			<a href=""><i class="fab fa-skype"></i></a>
+			<a href=""><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>	
+</header>
+
+<main>
+	<div class="container scrollflow -slide-top" id="tattoos">
+		<div class="main__sales">
+			<img class="item-1" src="img/tattoo_back.jpg" alt="">
+			<img class="item-2" src="img/tattoo_back2.jpg" alt="">
+			<img class="item-3" src="img/tattoo_back3.jpg" alt="">
+			<img class="item-4" src="img/tattoo_hand.jpg" alt="">
+			<img class="item-5" src="img/tattoo_hand2.jpg" alt="">
+			<img class="item-6" src="img/tattoo_hand3.jpg" alt="">
+		</div>
+	</div>
+	<div class="promotion" data-stellar-background-ratio="0.1" id="promotion" >
+		<span class="title__promotion">promotion</span>
+		<div id="countdown"></div>
+	</div>
+	
+	<div class="main__article" data-stellar-background-ratio="0.6" id="about">
+		<div class="main__content">	
+			<h3>TATTOO<br><i>make</i></h3>
+			<p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis commodi nesciunt reprehenderit laboriosam sapiente maxime cum quasi? Illo, quisquam?</p>
+			
+			<a href="#ex1" rel="modal:open"><p class="button__header">Сontact</p></a>
+			<div class="modal" id="ex1">
+			<p>Thanks for clicking.</p>
+			<a href="#" rel="modal:close"></a></div>
+
+		</div>
+	</div>
+</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script>$.stellar();</script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="js/eskju.jquery.scrollflow.min.js"></script>
+</body>
+</html>
